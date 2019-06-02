@@ -1,10 +1,6 @@
 ---
 layout: post
 published: true
-categories:
-  - personal
-mathjax: false
-featured: true
 comments: true
 title: Altering the minio bucket policy in kubernetes
 thumbnail: "https://images.unsplash.com/photo-1532298326444-cfaf66a44cd1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=267074028c630adbd9f64e3368206f31"

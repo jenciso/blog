@@ -7,6 +7,7 @@ menu:
     name: About me
     weight: 10
 toc: false
+comments: false
 ---
 <center>
 ![me](/images/jenciso_bn.png)

@@ -1,9 +1,6 @@
 ---
 layout: post
 published: true
-categories:
-  - personal
-mathjax: false
 featured: false
 comments: true
 title: How setup Haproxy with zero downtime reload from code source
