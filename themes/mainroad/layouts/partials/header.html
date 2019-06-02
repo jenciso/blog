@@ -1,0 +1,14 @@
+<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
+				<div class="logo__title">{{ .Site.Title }}</div>
+				{{ with .Site.Params.subtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
+			</a>
+			<a href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
+		                <img style="float: right" src="{{ .Site.Params.logo }}" alt="Site Logo" width="90">
+			</a>
+                </div>
+		{{ partial "menu.html" . }}
+	</div>
+</header>
