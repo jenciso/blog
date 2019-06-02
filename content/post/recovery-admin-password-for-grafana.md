@@ -10,7 +10,7 @@ categories:
 
 ## Intro 
 
-Sometimes you need to enter in your grafana system, but for some reason, you lost your admin password. If are you using sqlite as backend storage? Then following these steps:
+Sometimes you need to enter in your grafana system, but for some reason, you lost your admin password. If you've been using `sqlite` as your grafana backend storage, the following these steps:
 
 * In your local machine, install the sqlite3 package
 
