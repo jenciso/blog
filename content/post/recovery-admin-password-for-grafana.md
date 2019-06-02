@@ -1,7 +1,10 @@
 ---
 title: Recovery admin password for grafana
+linktitle: recovery-admin-password-for-grafana
 comments: true
 date: 2018-01-13
+categories:
+  - personal
 ---
 ## Steps to recovery admin password for grafana 
 
