@@ -4,6 +4,8 @@ published: true
 featured: false
 comments: true
 title: How setup Haproxy with zero downtime reload from code source
+tags:
+  - haproxy
 ---
 ## Intro
 
