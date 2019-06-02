@@ -1,10 +1,14 @@
 ---
 layout: post
-published: true
 comments: true
 title: Altering the minio bucket policy in kubernetes
-thumbnail: "https://blog.alexellis.io/content/images/2017/01/minio_light_cir_sm-1.png"
+date: 2018-08-09
+thumbnail: 'https://blog.alexellis.io/content/images/2017/01/minio_light_cir_sm-1.png'
+tags:
+  - minio
 ---
+## Intro
+
 If you want to create a public bucket, you can use the minio web interface to alter its bucket policy.
 
 First you need to get the credentials. Ex:
