@@ -8,6 +8,7 @@ mathjax: false
 featured: true
 comments: true
 title: Using a custom openconnect version for VPN
+thumbnail: https://lh3.ggpht.com/CgBsBObW435LaQ6Y_yceVU6eopiI_kRDJdOk6y5DVjs6vfWPZ8MKKQbJieDjQJFzwQ4
 toc: false
 date: 2017-10-21
 ---

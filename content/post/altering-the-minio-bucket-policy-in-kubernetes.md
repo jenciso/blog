@@ -3,7 +3,7 @@ layout: post
 published: true
 comments: true
 title: Altering the minio bucket policy in kubernetes
-thumbnail: "https://images.unsplash.com/photo-1532298326444-cfaf66a44cd1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=267074028c630adbd9f64e3368206f31"
+thumbnail: "https://blog.alexellis.io/content/images/2017/01/minio_light_cir_sm-1.png"
 ---
 If you want to create a public bucket, you can use the minio web interface to alter its bucket policy.
 

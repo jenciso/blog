@@ -4,6 +4,7 @@ published: true
 featured: false
 comments: true
 title: How setup Haproxy with zero downtime reload from code source
+thumbnail: https://cdn.haproxy.com/wp-content/uploads/2015/10/HAProxy_Logo-2-1.png
 tags:
   - haproxy
 ---

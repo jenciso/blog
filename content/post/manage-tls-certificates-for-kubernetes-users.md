@@ -2,12 +2,11 @@
 layout: post
 date: 2017-09-27
 published: true
-mathjax: false
-featured: false
 comments: true
+thumbnail: https://static.concrete.com.br/uploads/2018/02/image20-1.png
 title: Manage TLS Certificates for Kubernetes Users
 categories:
-  - personal
+  - kubernetes
 tags:
   - kubernetes
 ---
