@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Altering the minio bucket policy in kubernetes
 date: 2018-08-09
-thumbnail: 'https://blog.alexellis.io/content/images/2017/01/minio_light_cir_sm-1.png'
+thumbnail: https://www.worksonarm.com/wp-content/uploads/2017/01/Minio-Logo.jpg
 tags:
   - minio
 ---
