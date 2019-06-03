@@ -5,7 +5,7 @@ thumbnail: https://www.hostinger.com/blog/wp-content/uploads/sites/4/2017/11/gra
 comments: true
 date: 2018-01-13
 categories:
-  - grafana
+  - monitoring
 ---
 
 ## Intro 

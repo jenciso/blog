@@ -6,6 +6,8 @@ date: 2018-08-09
 thumbnail: https://www.worksonarm.com/wp-content/uploads/2017/01/Minio-Logo.jpg
 tags:
   - minio
+categories:
+  - cloud
 ---
 ## Intro
 

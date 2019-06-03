@@ -28,7 +28,7 @@ Although, it works fine, you could use it into your blog without upload the cast
 
 ## Embedding in Hugo with shortcodes
 
-#### Download the latest asciinema-player release from their [GitHub page](https://github.com/asciinema/asciinema-player/releases).
+Download the latest asciinema-player release from their [GitHub page](https://github.com/asciinema/asciinema-player/releases).
 
 #### Add static assets to your head
 
