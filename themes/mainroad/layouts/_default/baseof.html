@@ -23,6 +23,9 @@
 	{{- if not .Site.IsServer }}
 		{{ template "_internal/google_analytics_async.html" . }}
 	{{- end }}
+        {{ if .Params.asciinema }}
+        <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/asciinema-player.css" />
+        {{ end }}
 </head>
 <body class="body">
 	<div class="container container--outer">
@@ -43,5 +46,8 @@
 	</div>
 <script async defer src="{{ "js/menu.js" | relURL }}"></script>
 {{- partial "mathjax.html" . -}}
+{{ if .Params.asciinema }}
+    <script src="{{ .Site.BaseURL }}/js/asciinema-player.js"></script>
+{{ end }}
 </body>
 </html>
