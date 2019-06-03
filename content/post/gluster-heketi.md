@@ -71,5 +71,3 @@ $ kubectl exec -it -n gluster-heketi heketi-5c88f4574d-jxkpl heketi-cli topology
 ---
 Source: https://github.com/heketi/heketi/issues/926
 
-
-
