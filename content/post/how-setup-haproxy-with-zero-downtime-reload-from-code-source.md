@@ -22,10 +22,10 @@ Here are the steps to install the new version of haproxy 1.8.14, that include re
 * Download the latest haproxy version
 
 ```sh 
-export HAPROXY_MAJOR=1.8
-export HAPROXY_VERSION=1.8.14
+$ export HAPROXY_MAJOR=1.8
+$ export HAPROXY_VERSION=1.8.14
 
-wget -O haproxy.tar.gz \
+$ wget -O haproxy.tar.gz \
 "https://www.haproxy.org/download/${HAPROXY_MAJOR}/src/haproxy-${HAPROXY_VERSION}.tar.gz"
 ```
 
@@ -34,22 +34,22 @@ wget -O haproxy.tar.gz \
 For ubuntu 16.04:
 
 ```
-sudo apt-get update && sudo apt-get install -y ca-certificates gcc \
-libc6-dev liblua5.3-dev libpcre3-dev libssl-dev make wget \
-zlib1g-dev libsystemd-dev
+$ sudo apt-get update && sudo apt-get install -y ca-certificates gcc \
+  libc6-dev liblua5.3-dev libpcre3-dev libssl-dev make wget \
+  zlib1g-dev libsystemd-dev
 ``` 
 For Centos 7.5:
 
-```sh
-yum install -y inotify-tools wget tar gzip make gcc perl pcre-devel zlib-devel iptables \
+```
+$ yum install -y inotify-tools wget tar gzip make gcc perl pcre-devel zlib-devel iptables \
 openssl openssl-devel openssl-libs systemd-devel
 ```
 
 * Compiling
 
-```sh
-tar xvfz haproxy.tar.gz
-cd haproxy-1.8.14/
+```console
+$ tar xvfz haproxy.tar.gz
+$ cd haproxy-1.8.14/
 ```
 
 For ubuntu:
@@ -61,7 +61,7 @@ make install
 ```
 
 For Centos 7.5:
-``` 
+```
 make TARGET=linux2628 USE_GETADDRINFO=1 USE_ZLIB=1 USE_REGPARM=1 USE_OPENSSL=1 \
 USE_SYSTEMD=1 USE_PCRE=1 USE_PCRE_JIT=1 USE_NS=1
 
@@ -70,7 +70,7 @@ make install
 
 * verify the compile options, you have to have the `USE_SYSTEMD=1` option
 
-```
+```c
 HA-Proxy version 1.8.14-52e4d43 2018/09/20
 Copyright 2000-2018 Willy Tarreau <willy@haproxy.org>
 
