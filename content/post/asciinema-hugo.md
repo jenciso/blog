@@ -34,14 +34,14 @@ Download the latest asciinema-player release from their [GitHub page](https://gi
 
 Add the following to your template’s `head` section:
 
-```
+```html
 {{ if .Params.asciinema }}
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/asciinema-player.css" />
 {{ end }}
 ```
 Add the following just before the closing `body` tag in your template’s footer:
 
-```
+```html
 {{ if .Params.asciinema }}
     <script src="{{ .Site.BaseURL }}js/asciinema-player.js"></script>
 {{ end }}
