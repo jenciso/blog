@@ -6,6 +6,9 @@ thumbnail: https://angristan.xyz/content/images/size/w2000/2018/10/glusterfs.png
 tags:
   - gluster
   - heketi
+  - storage
+categories:
+  - linux
 ---
 
 ## Background
