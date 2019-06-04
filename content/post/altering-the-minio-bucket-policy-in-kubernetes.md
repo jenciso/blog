@@ -15,20 +15,17 @@ If you want to create a public bucket, you can use the minio web interface to al
 
 First you need to get the credentials. Ex:
 
-```sh
-✔ 21:21:09 [inspiron3647] ~ $ kubectl exec -it -n realiza \
-storage-realiza-minio-66449995b5-q2qt7 -- env | egrep MINIO.*KEY=
-MINIO_ACCESS_KEY=XJNCWECEDDSDSNXVEAAMKV
-MINIO_SECRET_KEY=BcjweDZOVMECCI232443e3
-✔ 21:21:10 [inspiron3647] ~ $
+```shell
+$ kubectl exec -it -n realiza \
+  storage-realiza-minio-66449995b5-q2qt7 -- env | egrep MINIO.*KEY= 
+$ MINIO_ACCESS_KEY=XJNCWECEDDSDSNXVEAAMKV
+$ MINIO_SECRET_KEY=BcjweDZOVMECCI232443e3
 ```
 
 Create a port-forward to access into the web interface
 
-```sh
-✔ 21:21:20 [inspiron3647] ~ $ kubectl port-forward -n realiza \
-storage-realiza-minio-66449995b5-q2qt7 9000:9000
-✔ 21:21:20 [inspiron3647] ~ $
+```console
+$ kubectl port-forward -n realiza storage-realiza-minio-66449995b5-q2qt7 9000:9000
 ``` 
 
 Then, you need to access via http://localhost:9000 and edit the policy and use the wildcard `*`. Like this image:
