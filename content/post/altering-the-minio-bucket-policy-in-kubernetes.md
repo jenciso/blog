@@ -16,10 +16,10 @@ If you want to create a public bucket, you can use the minio web interface to al
 First you need to get the credentials. Ex:
 
 ```shell
-$ kubectl exec -it -n realiza \
-  storage-realiza-minio-66449995b5-q2qt7 -- env | egrep MINIO.*KEY= 
-$ MINIO_ACCESS_KEY=XJNCWECEDDSDSNXVEAAMKV
-$ MINIO_SECRET_KEY=BcjweDZOVMECCI232443e3
+$ kubectl exec -it -n realiza storage-realiza-minio-6644999-lvtvp env | egrep MINIO.*KEY=  
+MINIO_ACCESS_KEY=XJNCWECEEMSNXVSWSC
+MINIO_SECRET_KEY=BcjweDZOVMECCIfiCY
+$ 
 ```
 
 Create a port-forward to access into the web interface
