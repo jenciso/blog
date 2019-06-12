@@ -11,7 +11,7 @@ tags:
   - emoji
 ---
 
-# Background
+## Background
 
 Ubuntu 18.04 LTS ships with all-new color emoji for use in messaging apps, text editors, and also on the web. Emoji is nothing new for Ubuntu. Older versions of Ubuntu come with simple black-and-white emoticons.In Ubuntu 16.04 LTS it could be a little hard to install it. So, here are th step to install it manually
 
@@ -34,7 +34,7 @@ $ vim ~/.fonts.conf
 
 * Copy the following text
 
-```html
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
