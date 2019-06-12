@@ -23,7 +23,10 @@ Ubuntu 18.04 LTS ships with all-new color emoji for use in messaging apps, text 
 * Copy the ttf file into the `.fonts` dir
 
 ```shell
-$ cp NotoColorEmoji.ttf ~/.fonts
+$ cd ~/Downloads
+$ unzip NotoColorEmoji-unhinted.zip
+$ mkdir ~/.fonts
+$ mv NotoColorEmoji.ttf ~/.fonts
 ```
 
 * Edit the `.fonts.conf` file
