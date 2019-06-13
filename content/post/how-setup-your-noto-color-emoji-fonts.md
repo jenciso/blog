@@ -9,18 +9,20 @@ date: 2019-06-11
 tags:
   - ubuntu
   - emoji
+categories:
+  - linux
 ---
 
-## Background
+## Intro
 
-Ubuntu 18.04 LTS ships with all-new color emoji for use in messaging apps, text editors, and also on the web. Emoji is nothing new for Ubuntu. Older versions of Ubuntu come with simple black-and-white emoticons.In Ubuntu 16.04 LTS it could be a little hard to install it. So, here are th step to install it manually
+Ubuntu 18.04 LTS ships with all-new color emoji for use in messaging apps, text editors, and also on the web. Emoji is nothing new for Ubuntu. Older versions of Ubuntu come with simple black-and-white emoticons, but what about if you want to use color emoji in Ubuntu 16.04 LTS, you need to install the right font to use it, the steps could be a little hard. So, here are the steps that I needed to install it.
 
 
 ## Steps
 
-* Download from https://www.google.com/get/noto. If you prefer, you could download it directly from [here](https://noto-website-2.storage.googleapis.com/pkgs/NotoColorEmoji-unhinted.zip)
+* Download the Noto Color Emoji font from [here](https://www.google.com/get/noto), or if you prefer, you could download it directly from [here](https://noto-website-2.storage.googleapis.com/pkgs/NotoColorEmoji-unhinted.zip)
 
-* Copy the ttf file into the `.fonts` dir
+* Then, copy the ttf file into your `.fonts` dir
 
 ```shell
 $ cd ~/Downloads
@@ -29,19 +31,18 @@ $ mkdir ~/.fonts
 $ mv NotoColorEmoji.ttf ~/.fonts
 ```
 
-* Edit the `.fonts.conf` file
+* Edit the `.fonts.conf` configuration file
 
 ```shell
 $ vim ~/.fonts.conf
 ```
 
-* Copy the following text
+* And put the following content
 
 ```xml
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
-
    <alias>
      <family>sans-serif</family>
      <prefer>
@@ -57,22 +58,14 @@ $ vim ~/.fonts.conf
        <family>Noto Emoji</family>
      </prefer>
    </alias>
-
-   <alias>
-    <family>monospace</family>
-    <prefer>
-      <family>Ubuntu Mono</family>
-     </prefer>
-   </alias>
-
 </fontconfig>
 ```
 
-* Rebuild the cache font
+* You need to rebuild the cache fonts to take effect
 
 ```shell
 $ sudo fc-cache -fv
 ```
 
-> You need to restart your chrome and if you have problems with your Terminal, because some characters appears a little big or some wierd, you should setup your Profile to specify the size font and not permit to ubuntu setup for you the fonts
+> In chrome web browser you need to restart that application. For your Gnome Terminal, some characters would be a little big, so you should setup your Profile Terminal to specify the specific size font to use, in my case `size 13` 
  
