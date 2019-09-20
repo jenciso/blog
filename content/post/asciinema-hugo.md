@@ -32,14 +32,14 @@ Download the latest asciinema-player release from their [GitHub page](https://gi
 
 #### Add static assets to your head
 
-Add the following to your template’s `head` section:
+Add this code in your `head` template section:
 
 ```html
 {{ if .Params.asciinema }}
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/asciinema-player.css" />
 {{ end }}
 ```
-Add the following just before the closing `body` tag in your template’s footer:
+And this too, before the closing `body` tag in your template’s footer:
 
 ```html
 {{ if .Params.asciinema }}
@@ -51,28 +51,8 @@ Add the following just before the closing `body` tag in your template’s footer
 
 Create a file `layouts/shortcodes/asciinema.html` with the following contents:
 
-```html
-<p>
-    <asciinema-player
-        src="/casts/{{ with .Get "key" }}{{ . }}{{ end }}.cast"
-        cols="{{ if .Get "cols" }}{{ .Get "cols" }}{{ else }}640{{ end }}"
-        rows="{{ if .Get "rows" }}{{ .Get "rows" }}{{ else }}10{{ end }}"
-        {{ if .Get "autoplay" }}autoplay="{{ .Get "autoplay" }}"{{ end }}
-        {{ if .Get "preload" }}preload="{{ .Get "preload" }}"{{ end }}
-        {{ if .Get "loop" }}loop="{{ .Get "loop" }}"{{ end }}
-        start-at="{{ if .Get "start-at" }}{{ .Get "start-at" }}{{ else }}0{{ end }}"
-        speed="{{ if .Get "speed" }}{{ .Get "speed" }}{{ else }}1{{ end }}"
-        {{ if .Get "idle-time-limit" }}idle-time-limit="{{ .Get "idle-time-limit" }}"{{ end }}
-        {{ if .Get "poster" }}poster="{{ .Get "poster" }}"{{ end }}
-        {{ if .Get "font-size" }}font-size="{{ .Get "font-size" }}"{{ end }}
-        {{ if .Get "theme" }}theme="{{ .Get "theme" }}"{{ end }}
-        {{ if .Get "title" }}title="{{ .Get "title" }}"{{ end }}
-        {{ if .Get "author" }}author="{{ .Get "author" }}"{{ end }}
-        {{ if .Get "author-url" }}author-url="{{ .Get "author-url" }}"{{ end }}
-        {{ if .Get "author-img-url" }}author-img-url="{{ .Get "author-img-url" }}"{{ end }}
-    ></asciinema-player>
-</p>
-```
+<script src="https://gist.github.com/jenciso/c41c5be03bb1f412b96326b1cb885cc0.js"></script>
+
 > The fields map directly to those documented [here](https://github.com/asciinema/asciinema-player#asciinema-player-element-attributes). All fields are supported, but only the key is required.
 
 #### Create casts
